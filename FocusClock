@@ -1,0 +1,7 @@
+import time
+def focus_timer(minutes):
+    seconds = minutes * 60
+    for i in range(seconds):
+        print(f"Time left: {seconds-i} seconds", end="\r")
+        time.sleep(1)
+    print("Time's up!")
